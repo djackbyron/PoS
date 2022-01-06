@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="smart_document_inherit" inherit_id="point_of_sale.report_saledetails">
+            <xpath expr="//div[hasclass('page')]/table/thead/tr" position="inside">
+                <th><strong>Total Price</strong></th>
+            </xpath>
+            <xpath expr="//div[hasclass('page')]/table/tbody/tr" position="inside">
+                 <td><t t-esc="line['quantity']*line['price_unit']" /></td>
+            </xpath>
+        </template>
+    </data>
+</odoo>

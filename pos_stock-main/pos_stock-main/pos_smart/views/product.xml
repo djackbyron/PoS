@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="product_template_only_fields_form_view_inherited" model="ir.ui.view">
+        <field name="name">product.template.product.form.fields.inherited</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_only_form_view"/>
+        <field name="arch" type="xml">
+            <field name="available_in_pos" position="after">
+                <field name="show_qty_on_hand"/>
+                <field name="show_neg"/>
+                <field name="can_still_sold_neg"/>
+            </field>
+        </field>
+    </record>
+    <record id="product_normal_form_view_only_fields_form_view_inherited" model="ir.ui.view">
+        <field name="name">product.product.product.form.fields.inherited</field>
+        <field name="model">product.product</field>
+        <field name="inherit_id" ref="product.product_normal_form_view"/>
+        <field name="arch" type="xml">
+            <field name="available_in_pos" position="after">
+                <field name="show_qty_on_hand"/>
+                <field name="show_neg"/>
+                <field name="can_still_sold_neg"/>
+            </field>
+        </field>
+    </record>
+</odoo>

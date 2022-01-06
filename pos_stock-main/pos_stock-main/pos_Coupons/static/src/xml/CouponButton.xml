@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+<t t-name="CouponButton" owl="1">
+        <button class="control-button" t-on-click="display_popup_products" style="display:none;">
+            <i class="fa fa-tag"/>
+            <span>Coupon
+        </span>
+        </button>
+    </t>
+<!--Modifying the POS screen UI-->
+
+</templates>
